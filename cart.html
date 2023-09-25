@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegradorJS - Camada 3117</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+                <a href="index.html"><img src="./assets/img/love-gelato-logo3.png" alt="Love_Gelato"></a>
+        </div>
+
+        <nav class="navbar">
+            <label for="menu-toggle" class="menu-label"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
+            <input type="checkbox" id="menu-toggle">
+
+            <ul class="navbar-list">
+                    <li><a href="register.html">Registro</li></a>
+                    <li><a href="login.html">Login</li></a>
+
+                    <div class="cart_icon">
+                        <a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;" alt="carrito" ><span id="cuenta-cart">0</span></i></a>
+                    </div>
+            </ul> 
+        </nav>
+    </header>
+
+    <main>
+
+        <p id="carrito-vacio">Ups! No hay productos en el carrito.<a href="./index.html">Agrega algunos</a></p>
+       
+        <section id="info">
+                <div class="cart_container">
+                    <div id="info-cards-container">
+                    
+                    </div>
+
+                    <div id="totales">
+                        <p>Total unidades: <span id="unidades">0</span></p>
+                        <p>Total precio: <span id="precio">0</span></p>
+                        <div id="button">
+                            <button disabled>Comprar</button>
+                            <button id="reiniciar">Reiniciar carrito</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+    
+</body>
+
+<script src="./JS/helados.js"></script>
+
+<script src="./JS/cartService.js" defer></script>
+
+<script src="./JS/cart.js" defer></script>
+
+
+
+</html>
